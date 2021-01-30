@@ -15,104 +15,49 @@
       </div>
     </div>
     <!-- TradingView Light Widget BEGIN -->
-    <div class="tradingview-widget-container" id="light">
-      <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright">
-        <a href="https://www.tradingview.com" rel="noopener" target="_blank"
-          ><span class="blue-text">Ticker Tape</span></a
-        >
-        by TradingView
-      </div>
-      <script
-        type="text/javascript"
-        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-        async
-      >
-        {
-          "symbols": [
-            {
-              "proName": "FOREXCOM:SPXUSD",
-              "title": "S&P 500"
-            },
-            {
-              "proName": "FOREXCOM:NSXUSD",
-              "title": "Nasdaq 100"
-            },
-            {
-              "proName": "TSX:TSX",
-              "title": "S&P/TSX Composite"
-            },
-            {
-              "description": "BTC",
-              "proName": "CAPITALCOM:BTCCAD"
-            },
-            {
-              "description": "ETH",
-              "proName": "CAPITALCOM:ETHCAD"
-            },
-            {
-              "description": "USD/CAD",
-              "proName": "FX:USDCAD"
-            }
-          ],
-          "showSymbolLogo": true,
-          "colorTheme": "light",
-          "isTransparent": true,
-          "displayMode": "regular",
-          "locale": "en"
-        }
-      </script>
-    </div>
-    <!-- TradingView Widget END -->
-    <!-- TradingView Dark Widget BEGIN -->
-    <div class="tradingview-widget-container" id="dark">
-      <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright">
-        <a href="https://www.tradingview.com" rel="noopener" target="_blank"
-          ><span class="blue-text">Ticker Tape</span></a
-        >
-        by TradingView
-      </div>
-      <script
-        type="text/javascript"
-        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-        async
-      >
-        {
-          "symbols": [
-            {
-              "proName": "FOREXCOM:SPXUSD",
-              "title": "S&P 500"
-            },
-            {
-              "proName": "FOREXCOM:NSXUSD",
-              "title": "Nasdaq 100"
-            },
-            {
-              "proName": "TSX:TSX",
-              "title": "S&P/TSX Composite"
-            },
-            {
-              "description": "BTC",
-              "proName": "CAPITALCOM:BTCCAD"
-            },
-            {
-              "description": "ETH",
-              "proName": "CAPITALCOM:ETHCAD"
-            },
-            {
-              "description": "USD/CAD",
-              "proName": "FX:USDCAD"
-            }
-          ],
-          "showSymbolLogo": true,
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "displayMode": "regular",
-          "locale": "en"
-        }
-      </script>
-    </div>
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "Nasdaq 100"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "BTC/USD"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "ETH/USD"
+    },
+    {
+      "description": "HKD/USD",
+      "proName": "FX_IDC:HKDUSD"
+    },
+    {
+      "description": "JPY/USD",
+      "proName": "FX_IDC:JPYUSD"
+    },
+    {
+      "description": "AUS/USD",
+      "proName": "FX:AUDUSD"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "light",
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
     <!-- TradingView Widget END -->
     <script src="app.js"></script>
   </body>
